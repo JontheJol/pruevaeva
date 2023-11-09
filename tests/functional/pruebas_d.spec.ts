@@ -9,5 +9,6 @@ test.group('Pruebas d', () => {
     console.log(datosBody)
 
     response.assertBody({hello : 'world'})
+    //tines que hacer is array ,is empty ,is boolean, is false ,is notarray
   })
   })
