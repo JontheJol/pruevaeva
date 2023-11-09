@@ -4,10 +4,7 @@ import User from 'App/Models/User'
 export default class UserPreloadsController {
   public async index({response}: HttpContextContract) {
 
-      const users = await User.query()
-        .preload('post')
-        .preload('comment')
-        .exec()
+      const users = "user";
 
       return response.json(users)
 

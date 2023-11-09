@@ -25,6 +25,15 @@ import UserController from 'App/Controllers/Http/UsersController'
 
 Route.get('/users', 'UserPreloadsController.index')
 
+
+Route.get('/', async () => {
+  return { hello: 'world' }
+})
+
 Route.any('/verbo', 'VerbosController.index')
 
 Route.any('/usuarios/:id?','UsersController.handle' )
+
+
+
+
