@@ -1,14 +1,11 @@
 import { test } from '@japa/runner'
+import User from 'App/Models/User';
 
-test.group('Pruebas d', () => {
-  test('assertbody', async({client, assert}) => {
 
-    const response = await client.get('/ ')
+test.group('Users Controller - PUT', () => {
+  test('actualizar usuario exitosamente', async ({client}) => {
 
-    let datosBody = JSON.parse(response.text())
-    console.log(datosBody)
-
-    response.assertBody({hello : 'world'})
-    //tines que hacer is array ,is empty ,is boolean, is false ,is notarray
-  })
-  })
+    const response =await client.post('usuarios/')
+  
+  });
+});

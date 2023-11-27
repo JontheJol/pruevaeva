@@ -15,7 +15,8 @@ export default class UsersController {
           const postSchema = schema.create({
             email: schema.string({}, [
               rules.email(),
-              rules.minLength(8)
+              rules.minLength(8),
+              rules.unique({ table: 'users', column: 'email' })
             ]),
             password: schema.string(),
             name: schema.string(),
