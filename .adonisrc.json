@@ -36,9 +36,16 @@
         "timeout": 60000
       },
       {
-        "name": "disting",
+        "name": "da",
         "files": [
-          "tests/disting/**/*.spec(.ts|.js)"
+          "tests/da/**/*.spec(.ts|.js)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "name": "pruebas",
+        "files": [
+          "tests/pruebas/**/*.spec(.ts|.js)"
         ],
         "timeout": 60000
       }
