@@ -9,7 +9,7 @@ export default class extends BaseSchema {
       table.string('nombre').notNullable();
       table.integer('dueño').unsigned().references('id').inTable('users');
       table.string('RazaPeso');
-      table.string('altura');
+      table.double('altura');
       table.dateTime('created_at', { useTz: true })
       table.dateTime('updated_at', { useTz: true })
     })

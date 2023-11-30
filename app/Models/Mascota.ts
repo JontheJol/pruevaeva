@@ -15,7 +15,7 @@ export default class Mascota extends BaseModel {
   public RazaPeso: string
 
   @column()
-  public altura: string
+  public altura: number
 
 
   @belongsTo(() => User, {
